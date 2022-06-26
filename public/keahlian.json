@@ -1,0 +1,150 @@
+{
+   "pendidikan": [
+      {
+         "sekolah": "MIN Simpang Ulim",
+         "start": 1996,
+         "end": 2001,
+         "desc": "Mulai belajar baca tulis",
+         "lokasi": "Aceh Utara"
+      },
+      {
+         "sekolah": "MIN Merduati Banda Aceh",
+         "start": 2001,
+         "end": 2003,
+         "desc": "Pindah sekolah karna perang",
+         "lokasi": "Kota Banda Aceh"
+      },
+      {
+         "sekolah": "SMP Negeri 4 Banda Aceh",
+         "start": 2003,
+         "end": 2004,
+         "desc": "Penuh dengan kekurangan",
+         "lokasi": "Kota Banda Aceh"
+      },
+      {
+         "sekolah": "SMP Negeri 1 Jangka",
+         "start": 2004,
+         "end": 2006,
+         "desc": "Pindah karna tsunami",
+         "lokasi": "Bireun"
+      },
+      {
+         "sekolah": "MSTI Negeri Banda Aceh",
+         "start": 2006,
+         "end": 2009,
+         "desc": "Penuh dengan masa - masa menyenangkan 😊?",
+         "lokasi": "Kota Banda Aceh"
+      },
+      {
+         "sekolah": "Lupa nama kampus nya (jenjang D1)",
+         "start": 2009,
+         "end": 2010,
+         "desc": "Masuk karna tidak lewat tempat lain",
+         "lokasi": "Kota Banda Aceh"
+      },
+      {
+         "sekolah": "Amik Indonesia",
+         "start": 2012,
+         "end": 2015,
+         "desc": "Masuk karna dikatain (nggak kuliah kamu). Dan bisa nyicil 😊?",
+         "lokasi": "Kota Banda Aceh"
+      }
+   ],
+   "pengalaman": [
+      {
+         "start": 2010,
+         "end": 2012,
+         "lokasi": "Kota Banda Aceh",
+         "desc": "Kerja serabutan, yang penting halal.",
+         "judul": "Banting tulang keluar keringat"
+      },
+      {
+         "start": 2016,
+         "end": 2017,
+         "lokasi": "Kota Banda Aceh",
+         "desc": "Mulai dapat kerjaan kantoran sebagai web developer disalah satu perusahaan startup kota banda aceh.",
+         "judul": "Kantoran??"
+      },
+      {
+         "start": 2017,
+         "end": "Sekarang",
+         "lokasi": "Kota Banda Aceh",
+         "desc": "Anggap saja dipecat dari tempat sebelumnya, kemudian masuk di salah satu perguruan tinggi yang ada di kota banda aceh sebagai web developer juga.",
+         "judul": "Universitas"
+      }
+   ],
+   "keterampilan_desain": [
+      {
+         "keahlian": "Desain web",
+         "skill": "50%"
+      },
+      {
+         "keahlian": "Desain cetak",
+         "skill": "50%"
+      },
+      {
+         "keahlian": "Desain grafis",
+         "skill": "50%"
+      }
+   ],
+   "coding_skill": [
+      {
+         "keahlian": "PHP",
+         "skill": "90%"
+      },
+      {
+         "keahlian": "React JS",
+         "skill": "90%"
+      },
+      {
+         "keahlian": "Node JS",
+         "skill": "50%"
+      },
+      {
+         "keahlian": "JavaScript",
+         "skill": "90%"
+      },
+      {
+         "keahlian": "jQuery",
+         "skill": "80%"
+      },
+      {
+         "keahlian": "MySql",
+         "skill": "96%"
+      },
+      {
+         "keahlian": "Postgre",
+         "skill": "92%"
+      },
+      {
+         "keahlian": "CSS",
+         "skill": "60%"
+      },
+      {
+         "keahlian": "Framework Codeigniter 3",
+         "skill": "80%"
+      },
+      {
+         "keahlian": "Framework Codeigniter 4",
+         "skill": "85%"
+      }
+   ],
+   "sertifikat": [
+      {
+         "logo": "/img/Logo-PT-TelkomPCC.jpg",
+         "nama": "Pelatihan Web Programming Advance",
+         "start": "2019-10-07",
+         "end": "2019-10-10",
+         "lokasi": "TPCC",
+         "kota": "BANDUNG"
+      },
+      {
+         "logo": "/img/Logo-PT-TelkomPCC.jpg",
+         "nama": "Pelatihan Dan Sertifikasi Database Programming",
+         "start": "2020-11-02",
+         "end": "2020-11-05",
+         "lokasi": "UIN AR RANIRY",
+         "kota": "BANDA ACEH"
+      }
+   ]
+}

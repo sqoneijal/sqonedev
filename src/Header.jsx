@@ -1,36 +1,7 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Header = (props) => {
    const { setRandomNumber } = props;
-
-   useEffect(() => {
-      const $ = window.$;
-      const t = () => {
-         let a = $(window).width(),
-            t = $("#site_header");
-
-         if (1025 > a) {
-            t.addClass("mobile-menu-hide");
-            $(".menu-toggle").removeClass("open");
-            setTimeout(() => {
-               t.addClass("animate");
-            }, 500);
-         } else {
-            t.removeClass("animate");
-         }
-      };
-      t();
-
-      $(window).on("resize", () => {
-         t();
-      });
-
-      $(".main-menu").on("click", "a", function (e) {
-         t();
-      });
-      return () => {};
-   }, []);
 
    const randomNumber = () => {
       var randomNumber = Math.floor(Math.random() * (51 - 0 + 1)) + 0;
@@ -69,7 +40,7 @@ const Header = (props) => {
             </li>
             <li>
                <Link to="/kontak" className="nav-anim" onClick={randomNumber}>
-                  <span className="menu-icon lnr lnr-envelope"></span>
+                  <span className="menu-icon lnr lnr-envelope" />
                   <span className="link-text">Kontak</span>
                </Link>
             </li>
@@ -77,8 +48,8 @@ const Header = (props) => {
          <div className="social-links">
             <ul>
                <li>
-                  <a href="https://web.facebook.com/sqone.developer/#" target="_blank" rel="noreferrer">
-                     <i className="fab fa-facebook-f"></i>
+                  <a href="https://web.facebook.com/sqone.developer" target="_blank" rel="noreferrer">
+                     <i className="fab fa-facebook-f" />
                   </a>
                </li>
             </ul>

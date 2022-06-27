@@ -13,6 +13,9 @@ const Contact = React.lazy(() => import("./page/Contact"));
 const App = (props) => {
    const { daftarTestimoni, daftarKlien, keahlian, daftarProject } = props;
 
+   // bool
+   const [is_menu_open, setIs_menu_open] = useState(false);
+
    // number
    const [randomNumber, setRandomNumber] = useState(0);
 
@@ -24,28 +27,55 @@ const App = (props) => {
       return () => {};
    }, [randomNumber]);
 
-   useEffect(() => {
-      const $ = window.$;
-      $(".menu-toggle").on("click", function () {
-         $("#site_header").addClass("animate");
-         $("#site_header").toggleClass("mobile-menu-hide");
-         $(".menu-toggle").toggleClass("open");
-      });
+   const handleMenuToggle = () => {
+      setIs_menu_open(!is_menu_open);
+   };
 
-      $(".animated-section").each(() => {
-         let e = $(this);
-         e.data("originalClassList", e.attr("class"));
-      });
+   useEffect(() => {
+      let menu_toggle = document.querySelector("div.menu-toggle");
+      let site_header = document.querySelector("#site_header");
+
+      const resize = () => {
+         setIs_menu_open(false);
+         let screen_width = window.screen.width;
+
+         if (1025 > screen_width) {
+            site_header.classList.add("mobile-menu-hide");
+            menu_toggle.classList.remove("open");
+
+            setTimeout(() => {
+               site_header.classList.add("animate");
+            }, 500);
+         } else {
+            site_header.classList.remove("animate");
+         }
+      };
+
+      if (is_menu_open) {
+         site_header.classList.add("animate");
+         site_header.classList.remove("mobile-menu-hide");
+         menu_toggle.classList.add("open");
+
+         let menu_list = site_header.querySelector("ul.main-menu").children;
+         for (let i = 0; i < menu_list.length; i++) {
+            menu_list[i].querySelector("a").onclick = () => {
+               resize();
+            };
+         }
+      } else {
+         site_header.classList.add("mobile-menu-hide");
+         menu_toggle.classList.remove("open");
+      }
 
       return () => {};
-   }, []);
+   }, [is_menu_open]);
 
    return (
       <div className="page-content">
          <Suspense fallback={<Preloader />}>
             <BrowserRouter>
                <Header setRandomNumber={(e) => setRandomNumber(e)} />
-               <div className="menu-toggle">
+               <div className="menu-toggle" onClick={handleMenuToggle}>
                   <span />
                   <span />
                   <span />
